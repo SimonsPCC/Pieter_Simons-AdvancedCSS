@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  background-color: #c3cfe2;
+}
+
+.kaart {
+  height: 550px;
+  width: 400px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 10px 7px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.kaart__footer {
+  background-color: #686de0;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  width: 100%;
+  height: 30%;
+  position: relative;
+}
+
+.kaart__foto {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  top: -75px;
+  right: 125px;
+}
+
+.kaart__texthouder {
+  height: 70%;
+}
+
+.kaart__text {
+  padding: 50px 40px;
+  font-weight: lighter;
+  font-stretch: ultra-condensed;
+  line-height: 1.4em;
+}
+
+.kaart__naam {
+  text-align: center;
+  color: #fff;
+  margin-top: 75px;
+  font-size: 1.4em;
+  margin-bottom: 0;
+}
+
+.kaart__website {
+  text-align: center;
+  color: #c3cfe2;
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .kaart {
+    height: 1100px;
+    width: 800px;
+    box-shadow: 0px 20px 14px 0px rgba(0, 0, 0, 0.5);
+  }
+  .kaart__foto {
+    width: 300px;
+    top: -150px;
+    right: 250px;
+  }
+  .kaart__text {
+    padding: 100px 80px;
+    font-size: 3em;
+  }
+  .kaart__naam {
+    margin-top: 150px;
+    font-size: 2.8em;
+  }
+  .kaart__website {
+    font-size: 2.4em;
+  }
+}
